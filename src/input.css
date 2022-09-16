@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.active > .nav {
+	@apply flex scale-y-100 md:scale-x-100;
+}
+.active .fa-share{
+	@apply bg-d-dark-blue text-l-grayish-blue;
+}
+.nav::before{
+	@apply md:content-[''] block absolute w-0 h-0 border-x-[18px] border-t-[15px] bottom-[-15px] border-t-v-dark-grayish-blue left-[50%] right-[50%];
+}
